@@ -1,9 +1,15 @@
 import java.util.List;
 
 /**
- * Clase encargada de gestionar el flujo completo de un pedido,
- * incluyendo su validación, cálculo de costes y notificaciones al cliente.
+ * CLASE REFACTORIZADA: Aplicación del patrón Extract Method (Extraer método).
+ * 
+ * El objetivo de esta refactorización es descomponer un método extenso que realizaba 
+ * múltiples responsabilidades (validar, calcular, aplicar descuentos, imprimir y enviar).
+ * 
+ * Se ha transformado la lógica en una serie de métodos especializados que facilitan 
+ * la lectura, el mantenimiento y la posible reutilización de código en el futuro.
  */
+
 public class GestorPedidosRefactorizado {
 
     /**
